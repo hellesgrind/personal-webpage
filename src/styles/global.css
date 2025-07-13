@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bavarian-blue: #0066CC;
+  --color-beer-gold: #F5A623;
+  --color-wheat: #F5DEB3;
+  --color-hop-green: #4A7C59;
+  --color-pretzel-brown: #8B4513;
+  --color-parchment: #F5F2E8;
+  --color-ink-black: #1A1A1A;
+  
+  --font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-display: 'Playfair Display', Georgia, serif;
+  
+  --shadow-vintage: 0 4px 6px -1px rgba(139, 69, 19, 0.1), 0 2px 4px -1px rgba(139, 69, 19, 0.06);
+}
+
+/* Bavarian-style decorative elements */
+.ornament {
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--color-beer-gold);
+  user-select: none;
+}
+
+/* Paper texture effect */
+.paper-texture {
+  position: relative;
+}
+
+.paper-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(139, 69, 19, 0.02) 10px,
+      rgba(139, 69, 19, 0.02) 20px
+    );
+  pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-beer-gold);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pretzel-brown);
+}
+
+/* Selection color */
+::selection {
+  background: rgb(245 166 35 / 0.3);
+  color: var(--color-ink-black);
+}
+
+/* Vintage link hover effect */
+a {
+  transition: all 0.2s ease;
+}
+
+/* Print styles for that authentic look */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+}
