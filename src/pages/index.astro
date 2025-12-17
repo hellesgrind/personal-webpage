@@ -205,11 +205,41 @@ import '../styles/global.css';
 						
 						<!-- Unreal Labs -->
 						<div class="bg-gradient-to-br from-slate-400 via-slate-500 to-slate-600 rounded-3xl p-8 text-white">
-							<div class="max-w-3xl">
+							<div class="max-w-4xl">
+								<!-- Video Gallery 2x2 -->
+								<div class="flex flex-col gap-4 mb-8">
+									<!-- Row 1: square + 16:9 -->
+									<div class="flex flex-col sm:flex-row gap-4">
+										<div class="h-40 sm:h-48 aspect-square rounded-2xl overflow-hidden shadow-xl bg-black">
+											<video class="w-full h-full object-cover object-top" autoplay muted loop playsinline preload="auto" webkit-playsinline>
+												<source src="/videos/unreallabs-1.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="h-40 sm:h-48 aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
+											<video class="w-full h-full object-cover object-top" autoplay muted loop playsinline preload="auto" webkit-playsinline>
+												<source src="/videos/unreallabs-2.mp4" type="video/mp4">
+											</video>
+										</div>
+									</div>
+									<!-- Row 2: square + 16:9 -->
+									<div class="flex flex-col sm:flex-row gap-4">
+										<div class="h-40 sm:h-48 aspect-square rounded-2xl overflow-hidden shadow-xl bg-black">
+											<video class="w-full h-full object-cover object-top" autoplay muted loop playsinline preload="auto" webkit-playsinline>
+												<source src="/videos/unreallabs-3.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="h-40 sm:h-48 aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
+											<video class="w-full h-full object-cover object-top" autoplay muted loop playsinline preload="auto" webkit-playsinline>
+												<source src="/videos/unreallabs-4.mp4" type="video/mp4">
+											</video>
+										</div>
+									</div>
+								</div>
+
 								<h3 class="text-3xl font-bold mb-2">Unreal Labs</h3>
 								<p class="text-slate-200 text-lg font-bold mb-4">Founding Engineer</p>
-								<p class="text-slate-100 text-lg leading-relaxed mb-6">Building an AI agent that automates entire performance marketing workflows. Our system generates, tests, and optimizes ad campaigns using advanced generative AI.</p>
-								
+								<p class="text-slate-100 text-lg leading-relaxed mb-6">Day-0 engineer at a startup building an Agentic AI Engine for video ad creation. The system takes clients' real video creatives, decomposes them (scenes, layers, text, audio), and auto-generates variations using a full stack of image, video, and audio generation models. AI-generated campaigns consistently outperform human-created campaigns in CPA and ROI.</p>
+
 								<!-- Key Achievements -->
 								<div class="mb-8">
 									<ul class="space-y-3">
@@ -219,11 +249,19 @@ import '../styles/global.css';
 										</li>
 										<li class="flex items-start">
 											<span class="text-slate-300 mr-3 text-xl">•</span>
-											<span class="text-slate-100">Managing 40% of ad budgets for pilot clients in closed beta</span>
+											<span class="text-slate-100">Zero to PMF — 20+ paying clients, ARR growing aggressively MoM</span>
 										</li>
 										<li class="flex items-start">
 											<span class="text-slate-300 mr-3 text-xl">•</span>
-											<span class="text-slate-100">AI campaigns consistently outperform human-created campaigns</span>
+											<span class="text-slate-100">Built core Agentic AI Engine: video decomposition + regeneration pipelines</span>
+										</li>
+										<li class="flex items-start">
+											<span class="text-slate-300 mr-3 text-xl">•</span>
+											<span class="text-slate-100">Lead GenAI team (3 AI Engineers + 1 Full-Stack SWE)</span>
+										</li>
+										<li class="flex items-start">
+											<span class="text-slate-300 mr-3 text-xl">•</span>
+											<span class="text-slate-100">Scaled to 2,000+ videos/week — optimized for speed and cost</span>
 										</li>
 									</ul>
 								</div>
